@@ -88,15 +88,13 @@
       - "DELETE"
       - "PATCH"
       - "OPTIONS"
-  x-wso2-production-endpoints: 
-    urls: 
-      - "http://localhost:3000"
-    type: "http"
-  x-wso2-sandbox-endpoints: 
-    urls: 
-      - "http://localhost:3000"
-    type: "http"
+  x-wso2-production-endpoints: "#/x-wso2-endpoints/trainsEP"
+  x-wso2-sandbox-endpoints: "#/x-wso2-endpoints/trainsEP"
   x-wso2-basePath: "/trains/1.0.0"
   x-wso2-transports: 
     - "http"
     - "https"
+  x-wso2-endpoints:
+   - trainsEP:
+      urls:
+      - http://localhost:3000
